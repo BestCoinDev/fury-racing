@@ -10,6 +10,7 @@ import { images } from "@/data";
 import { useWindowSize } from "@/hooks";
 import { useGameStates } from "@/stores";
 import { formatLuck, getLuckPercentage } from "@/utils/formatters";
+import { useState } from 'react';
 
 const calculateAdjustedValue = (value: number, adjustment: number): number => {
   const adjustmentFactor = 1 + adjustment / 100;
